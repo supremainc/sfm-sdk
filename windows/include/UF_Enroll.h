@@ -1,0 +1,60 @@
+/**
+ *  	Enroll
+ */
+
+/*  
+ *  Copyright (c) 2001-2021 Suprema Inc. All Rights Reserved.
+ * 
+ *  This software is the confidential and proprietary information of 
+ *  Suprema Inc. ("Confidential Information").  You shall not
+ *  disclose such Confidential Information and shall use it only in
+ *  accordance with the terms of the license agreement you entered into
+ *  with Suprema.
+ */
+
+#ifndef __UNIFINGER_ENROLL_H__
+#define __UNIFINGER_ENROLL_H__
+
+typedef enum
+{
+	// Legacy
+	UF_ENROLL_ONE_TIME = 0x30,
+	UF_ENROLL_TWO_TIMES1 = 0x31,
+	UF_ENROLL_TWO_TIMES2 = 0x32,
+	UF_ENROLL_TWO_TEMPLATES1 = 0x41,
+	UF_ENROLL_TWO_TEMPLATES2 = 0x42,
+
+	// Compatible enumerations
+	UF_ENROLL_MODE_ONE_TIME = UF_ENROLL_ONE_TIME,
+	UF_ENROLL_MODE_TWO_TIMES1 = UF_ENROLL_TWO_TIMES1,
+	UF_ENROLL_MODE_TWO_TIMES2 = UF_ENROLL_TWO_TIMES2,
+	UF_ENROLL_MODE_TWO_TEMPLATES1 = UF_ENROLL_TWO_TEMPLATES1,
+	UF_ENROLL_MODE_TWO_TEMPLATES2 = UF_ENROLL_TWO_TEMPLATES2,
+
+} UF_ENROLL_MODE;
+
+typedef enum
+{
+	// Legacy
+	UF_ENROLL_NONE = 0x00,
+	UF_ENROLL_ADD_NEW = 0x71,
+	UF_ENROLL_AUTO_ID = 0x79,
+	UF_ENROLL_CONTINUE = 0x74,
+	UF_ENROLL_CHECK_ID = 0x70,
+	UF_ENROLL_CHECK_FINGER = 0x84,
+	UF_ENROLL_CHECK_FINGER_AUTO_ID = 0x85,
+	UF_ENROLL_DURESS = 0x92,
+
+	// Compatible enumerations
+	UF_ENROLL_OPTION_NONE = UF_ENROLL_NONE,
+	UF_ENROLL_OPTION_ADD_NEW = UF_ENROLL_ADD_NEW,
+	UF_ENROLL_OPTION_AUTO_ID = UF_ENROLL_AUTO_ID,
+	UF_ENROLL_OPTION_CONTINUE = UF_ENROLL_CONTINUE,
+	UF_ENROLL_OPTION_CHECK_ID = UF_ENROLL_CHECK_ID,
+	UF_ENROLL_OPTION_CHECK_FINGER = UF_ENROLL_CHECK_FINGER,
+	UF_ENROLL_OPTION_CHECK_FINGER_AUTO_ID = UF_ENROLL_CHECK_FINGER_AUTO_ID,
+	UF_ENROLL_OPTION_DURESS = UF_ENROLL_DURESS,
+
+} UF_ENROLL_OPTION;
+
+#endif
