@@ -3,6 +3,8 @@
 SFM SDK library included the structure of directories and files as below.
 ```
 .
+├── LICENSE
+├── README.md
 ├── doc
 │   └── SFM_SDK_Manual_v3.3.0.pdf
 ├── include
@@ -34,7 +36,12 @@ SFM SDK library included the structure of directories and files as below.
 │   └── Version.h
 └── lib
     ├── linux
-    │   └── libSFM_SDK.so
+    │   ├── arm
+    │   │   └── libSFM_SDK.so
+    │   ├── arm64
+    │   │   └── libSFM_SDK.so
+    │   └── x86_64
+    │       └── libSFM_SDK.so
     └── windows
         ├── x64
         │   ├── SFM_SDK.dll
@@ -50,6 +57,10 @@ SFM SDK library included the structure of directories and files as below.
             └── SFM_SDK.lib
 
 ```
+## linux library information
+- `arm` : armv7 architecture supported (aarch32)
+- `arm64` : armv8 architecture supported (aarch64)
+- `x86_64` : x86_64 architecture supported (amd64)
 
 ## :warning: Notes
 
